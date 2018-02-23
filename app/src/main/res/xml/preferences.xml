@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="4"
+        android:entries="@array/quesses_list"
+        android:entryValues="@array/quesses_list"
+        android:key="pref_numberOfChoices"
+        android:persistent="true"
+        android:summary="@string/number_of_choices_description"
+        android:title="@string/number_of_choices" />
+    <MultiSelectListPreference
+        android:entries="@array/regions_list_for_settings"
+        android:entryValues="@array/regions_list"
+        android:key="pref_regionsToInclude"
+        android:title="@string/world_regions"
+        android:summary="@string/world_regions_description"
+        android:persistent="true"
+        android:defaultValue="@array/regions_list"
+        />
+
+</PreferenceScreen>
